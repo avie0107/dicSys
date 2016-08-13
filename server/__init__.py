@@ -22,10 +22,11 @@ def register_blueprints(app):
     blueprint登録
     :param app:
     """
-    from server.modules import (top, index)
+    from server.modules import (search, index, upload)
 
     app.register_blueprint(index.module, url_prefix='/')
-    app.register_blueprint(top.module, url_prefix='/top')
+    app.register_blueprint(upload.module, url_prefix='/upload')
+    app.register_blueprint(search.module, url_prefix='/search')
 
     @app.route('/')
     def index():

@@ -1,6 +1,6 @@
 import logging
 import time
-import boomerang
+import server
 from sqlalchemy import inspect
 from operator import itemgetter
 from sqlalchemy import create_engine
