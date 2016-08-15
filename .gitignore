@@ -1,3 +1,6 @@
+*__pycache__*
 .idea/
 auth/google/client_secret.json
 auth/flask/secret_key
+*.xlsx
+

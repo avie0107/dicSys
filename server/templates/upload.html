@@ -4,6 +4,26 @@
     <div class="container" style="margin: auto;">
         {% include "_flashmessage.html" %}
         <div>upload</div>
+        <form action="{{ url_for('upload.read_file') }}" method="post" enctype=multipart/form-data>
+        <table>
+
+            <tr class="row-aligner">
+                <td class="row-aligner-right-col"><label>アップロード</label></td>
+                <td class="row-aligner-right-col">
+                    <input type="text" id="upload_file_name" value="" class="input_box" style="margin-top: -10px" disabled>
+                </td>
+                <td class="row-aligner-right-col">
+                   <div class="file-button"> <span class="inside-button-text"><i class="icon-folder-open"></i>ファイル参照...</span>
+                        <input type="file" id="upload_file" name="file" multiple="multiple" class="button-design-gray" autofocus>
+                   </div>
+                </td>
+                <td>
+                    <input type="submit" value="ファイルを読み込む">
+                </td>
+            </tr>
+        </table>
+        </form>
     </div>
+
 
 {% endblock %}
