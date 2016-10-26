@@ -1,0 +1,8 @@
+.idea/
+auth/google/client_secret.json
+auth/flask/secret_key
+server/static/bootstrap/css
+server/static/bootstrap/fonts
+server/static/bootstrap/js
+*__pycache__/
+
