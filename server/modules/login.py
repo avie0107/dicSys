@@ -10,8 +10,6 @@ module = Blueprint('login', __name__)
 def google_login():
 
     url = None
-    print("inside google_login")
-
     try:
         url = GoogleAuth().authorized_url()
     except Exception as e:
